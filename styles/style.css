@@ -1,0 +1,18 @@
+/*---------------- 
+    common styles
+ -----------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-----------------------
+ header or banner styles
+ ------------------------ */
+
+.banner-container {
+    background-color: #2D25A0;
+    height: 677px;
+}
