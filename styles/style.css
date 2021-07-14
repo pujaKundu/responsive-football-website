@@ -1,6 +1,7 @@
 /* fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
 /*---------------- 
     common styles
@@ -12,8 +13,7 @@ body {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     margin: auto;
-    min-width: 600px;
-    max-width: 2000px
+    width: 1440px;
 }
 
 .container {
@@ -125,18 +125,22 @@ h1 {
 
 /* Top Player Styles */
 
+.top-player-container {
+    margin: 0% 3%;
+}
+
 .top-player-heading {
-    margin-left: 11%;
+    margin-left: 13%;
 }
 
 .top-player-heading hr {
-    margin-right: 11%;
+    margin-right: 13%;
 }
 
 .top-players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1%;
+    justify-items: center;
 }
 
 .top-player {
@@ -206,15 +210,41 @@ footer {
     margin-bottom: 63px;
 }
 
-footer img {
-    width: 483.87px;
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 262.1px;
     height: 110px;
 }
 
-.icon-container img {
+.logo-container p {
+    font-family: 'Niconne', cursive;
+    color: #10437A;
+    font-size: 72.5806px;
+    margin: 0;
+}
+
+.icon-container {
+    display: flex;
+}
+
+.icon {
+    display: flex;
     width: 32px;
     height: 32px;
     margin: 14px;
+    background-color: #dbd7d7;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon a {
+    color: #9e9999;
 }
 
 footer p {
@@ -229,8 +259,7 @@ footer p {
 /* Mobile Devices */
 
 @media only screen and (max-width:688px) {
-    body,
-    .container {
+    body {
         width: 100%;
     }
     .banner-title {
@@ -250,8 +279,15 @@ footer p {
     #news-1-thumbnail {
         margin-top: 0px;
     }
-    footer img {
-        width: 60%;
+    .logo-container img {
+        width: 150px;
+        height: 63px;
+    }
+    .logo-container p {
+        font-family: 'Niconne', cursive;
+        color: #10437A;
+        font-size: 28px;
+        margin: 0;
     }
 }
 
@@ -280,7 +316,14 @@ footer p {
     #news-1-thumbnail {
         margin-top: 0px;
     }
-    footer img {
-        width: 60%;
+    .logo-container img {
+        width: 150px;
+        height: 63px;
+    }
+    .logo-container p {
+        font-family: 'Niconne', cursive;
+        color: #10437A;
+        font-size: 44px;
+        margin: 0;
     }
 }
